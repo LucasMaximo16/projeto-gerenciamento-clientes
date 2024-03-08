@@ -25,15 +25,21 @@ export class RoutesClienteService {
         // Enquanto ainda houver clientes não visitados, o loop continua.
         while (clientesNaoVisitados.length > 0) {
            
+            console.log(clientesNaoVisitados, "CLIENTES N VISITADOS");
+            
             // Variáveis para determinar o próximo cliente a ser visitado.
             let proximoIndex = 0;
-            let distanciaMinima = Number.MAX_VALUE;
+            let distanciaMinima = Number.MAX_VALUE; //VALOR MAXIMO DE UM NUMERO NO JAVASCRIPT
+            console.log(distanciaMinima, "DISTANCIA MINIMA");
+            
 
             // Iteração sobre os clientes não visitados para encontrar o mais próximo.
             for (let i = 0; i < clientesNaoVisitados.length; i++) {
                 
                 // Calcula a distância do cliente atual até o cliente i.
                 let d = this.distanciaEntreDoisPontos(posicaoAtual, clientesNaoVisitados[i]);
+                console.log(d, "distanciadoispontosMinima");
+                
                 
                 // Se a distância for a menor até agora, atualiza a distância mínima e o índice do próximo cliente.
                 if (d < distanciaMinima) {
@@ -65,6 +71,8 @@ export class RoutesClienteService {
 
     // Método auxiliar para calcular a distância euclidiana entre dois pontos.
     distanciaEntreDoisPontos(pontoA: Ponto, pontoB: Ponto): number {
+        console.log("PONTO A", pontoA);
+        console.log("PONTO B", pontoB);
         
         // Extrai as coordenadas x e y dos pontos, tratando se são do tipo ClienteDTO ou um simples ponto.
         const x1 = 'coordenada_x' in pontoA ? pontoA.coordenada_x : pontoA.x;
