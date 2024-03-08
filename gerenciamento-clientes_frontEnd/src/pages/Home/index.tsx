@@ -70,6 +70,7 @@ export function Home() {
 
     return (
         <>
+        <h1>Cadastro de Cliente</h1>
         <div className={styles.register}>
             <form onSubmit={formikProps.handleSubmit}>
             <div className={styles.cardRegister}>

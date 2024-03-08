@@ -51,7 +51,6 @@ const GraficoRota = ({ dados }: any) => {
             plugins: {
               tooltip: {
                 callbacks: {
-                  // Altere 'label' para personalizar o texto da tooltip
                   label: function(context) {
                     const label = context.raw
                       return `${label.nome}: ${label.telefone}`;

@@ -47,6 +47,7 @@ export function BuscarClientes () {
     })
     return(
         <>
+        <h1>Buscar Clientes</h1>
             <div className={styles.register}>
                 <form onSubmit={formikProps.handleSubmit}>
                     <div className={styles.cardRegister}>
