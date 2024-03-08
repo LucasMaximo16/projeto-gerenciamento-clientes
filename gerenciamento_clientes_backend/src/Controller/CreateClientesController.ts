@@ -2,6 +2,7 @@ import { Request, Response } from "express";
 import { ClienteDTO } from "../DTO/ClienteDTO";
 import { CreateClienteService } from "../Service/CreateClienteService";
 
+//Camda de controle
 export class CreateClientesController{
     async handle (request: Request, response:Response){       
         const data : ClienteDTO =  request.body        
@@ -17,5 +18,4 @@ export class CreateClientesController{
             response.status(400).json(messageError)
         }
     }
-
 }

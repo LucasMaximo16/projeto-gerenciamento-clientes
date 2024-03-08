@@ -1,6 +1,7 @@
 import { Request, Response } from "express";
 import { BuscaClientesFilterService } from "../Service/BuscaClientesFilterService";
 
+//Camda de controle
 export class BuscaClientesFilterController {
     async handle (req: Request, res: Response){
         console.log("Busca")

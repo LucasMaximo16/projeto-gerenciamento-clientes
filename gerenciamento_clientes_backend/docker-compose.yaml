@@ -3,7 +3,7 @@ version: '3'
 services:
   db:
     image: postgres
-    container_name: porjeto-gerenciamento-Clientes
+    container_name: projeto-gerenciamento-Clientes
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: senha

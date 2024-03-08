@@ -20,7 +20,7 @@ const GraficoRota = ({ dados }: any) => {
 
       if (ctx) {
         // Adicionando o ponto de origem para o retorno
-        const dadosCompletos = [...dados, { coordenada_x: 0, coordenada_y: 0, nome: 'Empresa', telefone: '582147963' }];
+        const dadosCompletos = [{ coordenada_x: 0, coordenada_y: 0, nome: 'Empresa', telefone: '582147963' },...dados, { coordenada_x: 0, coordenada_y: 0, nome: 'Empresa', telefone: '582147963' }];
 
         const chart = new Chart(ctx, {
           type: 'line',

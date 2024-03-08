@@ -3,6 +3,7 @@ import { buscarCLientesfilter, createClienteController, rotasClienteController }
 
 const clienteRoute = Router()
 
+//Criação de rotas para chamada HTTP
 clienteRoute.post('/', (request: Request, response: Response)=>{
     return createClienteController.handle(request,response)
 })
