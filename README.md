@@ -44,5 +44,5 @@
 
 <h2> FrontEnd:</h2>
 <p> executar o comando <strong> npm install </strong> para instalar todas as dependencias do projeto</p>
-<p> Em seguida, no diretório do projeto execute o comando <strong>"npm start"</strong></p>
+<p> Em seguida, no diretório do projeto execute o comando <strong>"npm run dev"</strong></p>
 <p><strong>SEU FRONTEND ESTÁ INICIADO</strong></p>
